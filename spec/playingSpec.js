@@ -6,3 +6,5 @@ it("Returns 5 when 4 and 2 added together", expect(addTwoNumbers(4, 2)).toEqual(
 it("Empty array equals empty array", expect([]).toEqualArray([]));
 
 it("Array can be matched against same array", expect([1,2]).toEqualArray([1,2]));
+
+it("[1,2] is equal to [2,3]", expect([1,2]).toEqualArray([2,3]));
