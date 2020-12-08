@@ -24,3 +24,14 @@ var me2 = new Person("Snookie");
 it("Me 1 is the same as me 2", function() {
   expect(me1).toBeEquivalentTo(me2)
 });
+
+
+adam1 = new Person("Adam");
+constantine1 = new Person("Constantine");
+
+adam2 = new Person("Adam");
+constantine2 = new Person("Constantine");
+
+it("Array of primitive and reference objects are the same", function() {
+  expect([adam1, 3, constantine1]).toEqualArray([adam2, 3, constantine2]);
+});
